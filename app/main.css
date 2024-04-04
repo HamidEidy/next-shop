@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Fat";
+  src: url("../public/font/Yekan-Bakh-FaNum-08-Fat.woff") format("woff");
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  height: 100%;
+  max-width: 100vw !important;
+}
+
+.tst {
+  font-family: "Fat" !important;
+}
+.slick-prev,
+.slick-next {
+  z-index: 999; /* تنظیم z-index برای دکمه‌ها */
+}
+.slick-next {
+  margin-right: 9px;
+}
+.header {
+  background-image: url("/images/105272.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 15px;
+}
+.slick-slide {
+  direction: rtl;
+}
+.react-tabs__tab--selected {
+  border-bottom: 2px solid #facc15;
+  outline: none;
+  padding-bottom: 10px;
+}
+.bgDark {
+  background-color: #24374a;
+}
+
+.btn {
+  background-color: #facc15;
+  color: #000000;
+  padding: 5px 20px;
+  border-radius: 5px;
+  outline: none;
+}
+@layer components {
+  html{
+    background-image: url("/images/bg.jpg");
+    background-size: 40% 20%;
+  }
+  .apply {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .dark {
+    background-image: url("/images/2546365.jpg");
+        background-size: 40% 20%; 
+  }
+
+  .gotoMenu {
+    background-image: url("/images/106390.jpg");
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000000 !important;
+  font-size: 30px !important;
+}
+.vido {
+  object-fit: cover;
+  width: 50vw !important;
+  height: 20vh;
+  z-index: 20;
+}
+.navigation {
+  height: 70px;
+  position: relative;
+  justify-content: center;
+  z-index: 1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.navigation ul {
+  display: flex;
+  padding-top: 17px;
+}
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+.navigation ul li a,
+.navigation ul li button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.navigation ul li a .icon,
+.navigation ul li button .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 2em;
+  text-align: center;
+  transition: 0.5s;
+  color: white;
+  opacity: 0.8;
+}
+.navigation ul li.active a .icon {
+  transform: translateY(-8px);
+  opacity: 1;
+  color: #29fd;
+}
+
+.indicator {
+  position: absolute;
+  top: -8px;
+  width: 70px;
+  height: 65px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  border: 1px solid white;
+  background: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.indicator::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -20.75px;
+  width: 20px;
+  height: 20px;
+  border-top-right-radius: 15px;
+  box-shadow: 4px -6px 0 2px white;
+}
+
+.indicator::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -20.75px;
+  width: 20px;
+  height: 20px;
+  border-top-left-radius: 15px;
+  box-shadow: -4px -6px 0 2px white;
+  z-index: -1;
+}
+.navigation ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(calc(70px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(calc(70px * 2));
+}
+.navigation ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(calc(70px * 3));
+}
+.navigation ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(calc(70px * 4));
+}
+.indicator span {
+  position: absolute;
+  bottom: 6px;
+  left: 3.5px;
+  width: 60px;
+  height: 60px;
+  border: 4px solid #29fd;
+  background: #fff;
+  border-radius: 50%;
+  transform-origin: bottom;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transform: scale(0.85);
+}
