@@ -7,6 +7,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 
 
+![2](https://github.com/HamidEidy/next-shop/assets/148962898/d9fbd921-d6cb-4302-aac1-d0eca313004b)
 
 
 
