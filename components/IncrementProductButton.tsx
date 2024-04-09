@@ -8,7 +8,7 @@ const IncrementProductButton = ({ product }:any) => {
     const [qty, setQty] = useState<number>(1)
     return (
         <>
-            <div className="flex row justify-center">
+            <div className="flex row justify-center dark:text-slate-100">
                 <CiCirclePlus className="text-2xl cursor-pointer" onClick={() => qty < product.quantity && setQty(qty + 1)} />
                 <span className="px-3 text-lg">{qty}</span>
                 <IoIosRemoveCircleOutline className="text-2xl cursor-pointer" onClick={() => qty > 1 && setQty(qty - 1)} />

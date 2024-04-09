@@ -7,10 +7,5 @@ const getStorage = () => {
         return localStorage?.getItem('shopping-cart') ? JSON.parse(localStorage?.getItem('shopping-cart')) : [];
     }
 }
-// const getStorage = () => {
-//     if (typeof window !== 'undefined') {
-//         const item = localStorage.getItem('shopping-cart');
-//         return item ? JSON.parse(item) : [];
-//     }
-// }
+
 export {saveStorage, getStorage}

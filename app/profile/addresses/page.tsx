@@ -3,12 +3,9 @@ import ClientAddressForm from "@/components/profile/ClientAdressForm";
 import CreateAddressForm from "@/components/profile/CreateAddressForm";
 import { getFetch } from "@/utils/fetch";
 import { cookies } from "next/headers";
-
 const addresses = async () => {
     const token = cookies().get('token');
     const data = await getFetch('/profile/addresses', { 'Authorization': `Bearer ${token?.value}` })
-
-
     return (
         <div>
             {data.data.addresses.length > 0 ? (

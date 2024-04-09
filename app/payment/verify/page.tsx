@@ -39,8 +39,6 @@ const verify = () => {
                         <div className="w-full bg-whiteHeader dark:bg-slate-400 lg:w-2/4 flex flex-col justify-center text-center border rounded-lg p-8">
                             <div className="flex justify-center mb-5">
                                 {status === '2' ? (<IoCheckmarkDoneCircle className=" text-green-500 text-6xl" />) : (<MdCancel className=" text-red-500 text-6xl" />)}
-
-
                             </div>
                             {status === '2' ? (<p className="text-green-700">عملیات پرداخت با موفقیت انجام شد</p>) : (<p className="text-red-600">{paymen.error}</p>)}
                             {status === '2' ? (
@@ -65,4 +63,4 @@ const verify = () => {
 
     )
 }
-export default verify
+export default verify;

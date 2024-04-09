@@ -9,19 +9,13 @@ const Auth = () => {
         setAuth(true)
     }, [])
     return (
-        <div className="relative flex justify-center bg-indigo-300">
-            <div className="max-h-screen overflow-hidden top-0 left-0 bg-gray-200 flex justify-center items-center" dir="rtl">
-                <video controls preload="auto" loop autoPlay>
-                    <source src="/4.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-
+        <div className="relative flex justify-center bg-violet-500">
+            <div className="h-screen w-[100vw] top-0 left-0" dir="rtl">
             </div >
             {auth ? (
-
-                    <LoginForm setAuth={setAuth} />
+                <LoginForm setAuth={setAuth} />
             ) : (
-                    <CheckOtp />
+                <CheckOtp />
             )}
         </div>
 
