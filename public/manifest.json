@@ -1,0 +1,17 @@
+{
+    "name": "Next.js Eccomerce",
+    "short_name": "Next.js",
+ 
+    "background_color": "#D0D4DC",
+    "start_url": "/?source=pwa",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "images/curve.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+  }

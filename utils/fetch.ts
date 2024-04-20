@@ -32,7 +32,9 @@ const getFetch = async (url:any, headers = {}) => {
         
         return await res.json();
     } else {
-        throw new Error(`مشکل در دریافت اطلاعات کد : ${res.status}`);
+        // throw new Error(`مشکل در دریافت اطلاعات کد : ${res.status}`);
+        console.log('data didnt fetch');
+        
     }
 }
 const postFetch = async (url:any, body:any, headers = {}) => {

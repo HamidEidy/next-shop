@@ -110,7 +110,7 @@ const Header = () => {
                 <div className="flex flex-col justify-center my-12 items-center space-y-8">
                     <div className="flex items-center mt-8">
                         <a href="/">
-                            <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/50/external-pizza-fast-food-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-1.png" alt="external-pizza-fast-food-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-1" />
+                            <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/50/external-pizza-fast-food-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-1.png" alt="external-pizza" />
                         </a>
                         <h1 className="text-4xl text-gray-700 dark:text-gray-100 ms-2 tst">فست فود</h1>
                     </div>
