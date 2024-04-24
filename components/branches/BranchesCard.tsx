@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import Image from 'next/image';
 const BranchesCard = ({ location, title, description, href }: any) => {
     return (
-        <div>
+        <div className="flex flex-row-reverse">
             <div className="basis-1/2">
                 <MapContainer className="h-[150px] rounded-lg" center={location} zoom={16} scrollWheelZoom={false}>
                     <TileLayer
@@ -18,7 +18,7 @@ const BranchesCard = ({ location, title, description, href }: any) => {
                     </Marker>
                 </MapContainer>
             </div>
-            <div className="basis-1/2 text-end pe-2">
+            <div className="basis-1/2 text-end pe-8">
                 <div>
                     <h5 className=" font-bold mb-1 dark:text-slate-50">{title}</h5>
                     <p className="text-sm text-gray-700 dark:text-slate-200">{description}</p>

@@ -1,2 +1,7 @@
 node_modules/
 .next/
+certificates/
+.gitignore
+public/fallback-ce627215c0e4a9af.js
+public/workbox-c06b064f.js
+public/sw.js

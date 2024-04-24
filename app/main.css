@@ -38,7 +38,26 @@
     background-image: url("/images/106390.jpg");
   }
 }
-
+.react-tabs__tab--selected {
+  border-bottom: 2px solid #facc15;
+  outline: none;
+  padding-bottom: 10px;
+}
+.slick-prev,
+.slick-next {
+  z-index: 999; /* تنظیم z-index برای دکمه‌ها */
+}
+.slick-next {
+  margin-right: 9px;
+}
+.slick-slide {
+  direction: rtl;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #000000 !important;
+  font-size: 30px !important;
+}
 @layer components {
   html {
     background-image: url("/images/bg.jpg");
@@ -66,11 +85,7 @@
     padding-bottom: 15px;
   }
 
-  .react-tabs__tab--selected {
-    border-bottom: 2px solid #facc15;
-    outline: none;
-    padding-bottom: 10px;
-  }
+
 
   .btn {
     background-color: #facc15;

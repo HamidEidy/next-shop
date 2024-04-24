@@ -9,6 +9,8 @@ interface Branch {
     href: string;
 }
 const MyAwesomeMap = dynamic(() => import("@/components/branches/BranchesCard"), { ssr: false })
+const MyHeader = dynamic(() => import("@/components/layouts/Header"), { ssr: false })
+const MyFooter = dynamic(() => import("@/components/layouts/Footer"), { ssr: false })
 const branches = () => {
     const branches: Branch[] = [
         { location: [35.807190, 51.428987], title: 'تهران، تجریش', description: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.', href: 'https://maps.app.goo.gl/VX46nuFLzZ1BGH4E8' },
@@ -18,7 +20,7 @@ const branches = () => {
     ];
     return (
         <div>
-            <Header />
+            <MyHeader />
             <div className="container mx-auto w-5/6 lg:w-2/3 py-12">
                 <section className="flex justify-center flex-col text-center">
                     <Title title={'لیست شعبه های فعال'} />
@@ -32,7 +34,7 @@ const branches = () => {
                     </div>
                 </section >
             </div>
-            <Footer />
+            <MyFooter />
         </div>
     )
 }

@@ -1,0 +1,1 @@
+self.addEventListener("install",e=>{e.waitUntil(caches.open("CURRENT_CACHES").then(e=>{}))}),self.addEventListener("fetch",e=>{e.respondWith(caches.open("CURRENT_CACHES").then(t=>caches.match(e.request).then(t=>t||fetch(e.request))))});

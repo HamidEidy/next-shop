@@ -5,10 +5,13 @@ import dynamic from "next/dynamic";
 const DynamicComponentWithNoSSR = dynamic(() => import('@/components/contact-us/Map'), {
     ssr: false
   })
+  const MyHeader = dynamic(() => import('@/components/layouts/Header'), {
+    ssr: false
+  })
 const contactUs = () =>{
     return(
         <>
-        <Header />
+        <MyHeader />
         <DynamicComponentWithNoSSR />
         <ContactForm />
         <Footer />

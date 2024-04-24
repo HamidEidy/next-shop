@@ -48,7 +48,7 @@ const Header = () => {
         }
     }
 
-    const myElementRef = useRef();
+    const myElementRef = useRef<any>();
 
 
 

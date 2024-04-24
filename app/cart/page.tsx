@@ -9,6 +9,13 @@ import EmptyCartAlert from "@/components/cart/EmptyCartAlert";
 import ProductList from "@/components/cart/ProductList";
 import { useSelector } from "react-redux";
 import TotalAmount from "@/components/cart/TotalAmount";
+import dynamic from "next/dynamic";
+const MyHeader = dynamic(() => import('@/components/layouts/Header'), {
+    ssr: false
+  })
+  const MyFooter = dynamic(() => import('@/components/layouts/Footer'), {
+    ssr: false
+  })
 const cart = () => {
     const state = useSelector(((state: any) => state.shoppingCart))
     const [cartlength, setCartlength] = useState(null)
@@ -21,7 +28,7 @@ const cart = () => {
     const [addressId, setAddressId] = useState()
     return (
         <div>
-            <Header />
+            <MyHeader />
             {cartlength == 0 ? (
                 <EmptyCartAlert />
             ) : (
@@ -56,7 +63,7 @@ const cart = () => {
                     </div>
                 </div>
             )}
-            <Footer />
+            <MyFooter />
         </div>
     )
 }

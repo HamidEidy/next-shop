@@ -14,9 +14,9 @@ const Intro = () => {
                 <IntroTitle />
 
 
-                <div className="flex justify-center items-center mb-8 -mt-[70px] lg:-mt-[50px]">
-                    <Image className="rotate-90 hidden dark:block" src="/dcurve.png" width={100} height={100} alt="arrow" />
-                    <Image className="rotate-90 block dark:hidden" src="/curve.png" width={100} height={100} alt="arrow" />
+                <div className="flex justify-center items-center mb-8 -mt-[100px] lg:-mt-[50px]">
+                    <Image className="rotate-90 hidden dark:block" src="/images/dcurve.png" width={100} height={100} alt="arrow" />
+                    <Image className="rotate-90 block dark:hidden" src="/images/curve.png" width={100} height={100} alt="arrow" />
                 </div>
 
                 <IntroTools />
